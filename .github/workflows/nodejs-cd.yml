@@ -17,7 +17,7 @@ jobs:
         port: 22
         script: |
           cd ~/github-workflow/github-workflow-example
-          git pull origin master
+          git pull origin main
           git status
           npm i --only=prod
           pm2 restart github_workflow
