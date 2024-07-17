@@ -37,7 +37,7 @@ describe("GET /", () => {
   it("responds with Hello World!", async () => {
     const response = await request(app).get("/");
     expect(response.statusCode).toBe(200);
-    expect(response.text).toEqual("Hello World!");
+    expect(response.text).toEqual("Home Page!");
   });
 });
 
