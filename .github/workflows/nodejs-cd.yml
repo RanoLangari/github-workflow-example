@@ -19,5 +19,5 @@ jobs:
           cd ~/github-workflow/github-workflow-example
           git pull origin main
           git status
-          npm i
+          npm i --only=prod
           pm2 restart github_workflow
