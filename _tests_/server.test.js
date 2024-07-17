@@ -23,6 +23,15 @@ describe("GET /testing", () => {
   });
 });
 
+// Test the /about endpoint
+describe("GET /about", () => {
+  it("responds with About page", async () => {
+    const response = await request(app).get("/about");
+    expect(response.statusCode).toBe(200);
+    expect(response.text).toEqual("About page");
+  });
+});
+
 // Test the / endpoint
 describe("GET /", () => {
   it("responds with Hello World!", async () => {
