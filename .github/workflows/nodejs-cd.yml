@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Node.js CD
 
 on:
   push:
@@ -19,5 +19,5 @@ jobs:
           cd ~/github-workflow/github-workflow-example
           git pull origin main
           git status
-          npm i --only=prod
+          npm i
           pm2 restart github_workflow
